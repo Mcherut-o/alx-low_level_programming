@@ -1,20 +1,18 @@
 #include "main.h"
 /**
-*main - A program that prints _putchar"
+*main - A program that prints _putcha
 *Return: Always 0 (Success)
 */
-int _putchar(char s)
-{
-return (0);
-}
 int main(void)
 {
-char *s = "_putchar\n";
-for (int i = 0; s[i] != '\0'; i++)
-{
-_putchar(s[i]);
-}
+_putchar('_');
+_putchar('p');
+_putchar('u');
+_putchar('t');
+_putchar('c');
+_putchar('h');
+_putchar('a');
+_putchar('r');
+_putchar('\n');
 return (0);
 }
-
-
