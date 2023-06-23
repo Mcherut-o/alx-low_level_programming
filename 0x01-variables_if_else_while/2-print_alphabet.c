@@ -5,13 +5,13 @@
 */
 int main(void)
 {
-char c;
-n = 'a';
-while (c <= 'z')
+char lowerc;
+lowerc = 'a';
+while (lowerc <= 'z')
 {
-putchar("c");
-c++;
+putchar(lowerc);
+lowerc++;
 }
-putchar("\n");
+putchar('\n');
 return (0);
 }
