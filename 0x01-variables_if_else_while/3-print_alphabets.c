@@ -10,13 +10,13 @@ lowerc = 'a';
 while (lowerc <= 'z')
 {
 putchar(lowerc);
+lowerc++;
+}
 upperc = 'A';
 while (upperc <= 'Z')
 {
 putchar(upperc);
 upperc++;
-}
-lowerc++;
 }
 putchar('\n');
 return (0);
