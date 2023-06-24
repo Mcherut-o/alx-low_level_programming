@@ -4,7 +4,7 @@
 *_putchar - Prints the character s to the standard output
 *Return: Always 0 (Success)
 */
-int _putchar(char s)
+int _putchar(char c)
 {
-return (write(1, &s, 1));
+return (write(1, &c, 1));
 }

@@ -1,16 +1,16 @@
 #include "main.h"
 #include <unistd.h>
+#include <stdio.h>
 /**
 *main - A program that prints the Alphabets in lowercase
 *Return: Always 0 (Success)
 */
-int main(void)
+void print_alphabet(void)
 {
-int a;
-for (a = 97; a <= 122; a++);
- {
-   _putchar(a);
- }
+char lc;    
+for (lc = 'a'; lc <= 'z'; lc++)
+{
+_putchar(lc);
+}   
 _putchar('\n');
-return (0);
 }
