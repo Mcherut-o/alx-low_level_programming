@@ -1,5 +1,4 @@
 #include "main.h"
-#include <unistd.h>
 
 /**
 * _islower - A function that searches for lowercase charaters
