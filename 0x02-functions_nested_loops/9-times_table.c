@@ -12,20 +12,18 @@ for (i = 0; i <= 9; i++)
 for (j = 0; j <= 9; j++)
 {
 times = i * j;
-if (times <= 9)
+if (times >= 10)
 {
-_putchar(times + '0');
+_putchar((times / 10) + '0');
 }
 else
 {
-_putchar((times / 10) + '0');
-_putchar((times % 10) + '0');
+_putchar (' ');
 }
-if (j < 9)
-{
+_putchar((times % 10) + '0');
+if (j <= 9)
 _putchar(',');
 _putchar(' ');
-}
 }
 _putchar('\n');
 }
