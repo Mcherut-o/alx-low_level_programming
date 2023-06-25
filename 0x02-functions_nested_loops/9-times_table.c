@@ -12,17 +12,21 @@ for (i = 0; i <= 9; i++)
 for (j = 0; j <= 9; j++)
 {
 times = i * j;
-if (times >= 10)
+if (j == 0)
 {
-_putchar((times / 10) + '0');
-_putchar((times % 10) + '0');
+_putchar('0');
 }
-else
+else if (times < 10)
 {
 _putchar(' ');
 _putchar(times + '0');
 }
-if (j != 10)
+else
+{
+_putchar((times / 10) + '0');
+_putchar((times % 10) + '0');
+}
+if (j != 9)
 {
 _putchar(',');
 _putchar(' ');
