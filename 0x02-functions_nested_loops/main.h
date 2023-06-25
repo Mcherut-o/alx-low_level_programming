@@ -1,5 +1,6 @@
 #ifndef MAIN_H
 #define MAIN_H
+#include <limits.h>
 
 int _putchar(char r);
 void print_alphabet(void);
