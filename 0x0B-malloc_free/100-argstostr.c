@@ -2,40 +2,40 @@
 #include <stdlib.h>
 
 /**
- * argstostr - main entry
- * @ac: int input
- * @av: double pointer array
- * Return: 0
- */
+* argstostr - A function that splits strings into words
+* @ac: integer
+* @av: character
+* Return: NULL if function fails
+*/
+
 char *argstostr(int ac, char **av)
 {
-	int i, n, r = 0, l = 0;
-	char *str;
-
-	if (ac == 0 || av == NULL)
-		return (NULL);
-
-	for (i = 0; i < ac; i++)
-	{
-		for (n = 0; av[i][n]; n++)
-			l++;
-	}
-	l += ac;
-
-	str = malloc(sizeof(char) * l + 1);
-	if (str == NULL)
-		return (NULL);
-	for (i = 0; i < ac; i++)
-	{
-	for (n = 0; av[i][n]; n++)
-	{
-		str[r] = av[i][n];
-		r++;
-	}
-	if (str[r] == '\0')
-	{
-		str[r++] = '\n';
-	}
-	}
-	return (str);
+int w, x, y = 0, z = 0;
+char *s;
+if (ac == 0 || av == NULL)
+{
+return (NULL);
+}
+for (w = 0; w < ac; w++)
+{
+for (x = 0; av[w][x]; x++)
+z++;
+}
+z += ac;
+s = malloc(sizeof(char) * z + 1);
+if (s == NULL)
+return (NULL);
+for (w = 0; w < ac; w++)
+{
+for (x = 0; av[w][x]; x++)
+{
+s[y] = av[w][x];
+y++;
+}
+if (s[y] == '\0')
+{
+s[y++] = '\n';
+}
+}
+return (s);
 }
