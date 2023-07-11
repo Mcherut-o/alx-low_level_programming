@@ -1,10 +1,21 @@
 #include "main.h"
 #include <stdlib.h>
+
 /**
- * create_array - create array of size size and assign char c
- * @size: size of array
- * @c: char to assign
- * Description: create array of size size and assign char c
- * Return: pointer to array, NULL if fail
+ * free_grid - frees 2d array
+ * @grid: 2d grid
+ * @height: height dimension of grid
+ * Description: frees memory of grid
+ * Return: nothing
  *
  */
+void free_grid(int **grid, int height)
+{
+	int i;
+
+	for (i = 0; i < height; i++)
+	{
+		free(grid[i]);
+	}
+	free(grid);
+}
