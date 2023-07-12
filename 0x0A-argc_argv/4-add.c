@@ -2,36 +2,35 @@
 #include <stdlib.h>
 #include <ctype.h>
 #include <string.h>
+
 /**
- * check_num - check - string there are digit
+ * number_ch - A function that checks numbers
  * @str: array str
- *
  * Return: Always 0 (Success)
  */
-int check_num(char *str)
-{
-	/*Declaring variables*/
-	unsigned int count;
 
-	count = 0;
-	while (count < strlen(str)) /*count string*/
+int number_ch(char *str)
+{
+	unsigned int c;
+
+	c = 0;
+	while (c < strlen(str))
 
 	{
-		if (!isdigit(str[count])) /*check if str there are digit*/
+		if (!isdigit(str[c]))
 		{
 			return (0);
 		}
 
-		count++;
+		c++;
 	}
 	return (1);
 }
 
 /**
- * main - Print the name of the program
- * @argc: Count arguments
- * @argv: Arguments
- *
+ * main - This function prints minimum number of coins to make change
+ * @argc: Number of command line arguments
+ * @argv: Array containing program command line arguments
  * Return: Always 0 (Success)
  */
 
@@ -39,32 +38,30 @@ int main(int argc, char *argv[])
 
 {
 
-	/*Declaring variables*/
-	int count;
-	int str_to_int;
-	int sum = 0;
+	int c;
+	int si;
+	int result = 0;
 
-	count = 1;
-	while (count < argc) /*Goes through the whole array*/
+	c = 1;
+	while (c < argc)
 	{
-		if (check_num(argv[count]))
+		if (number_ch(argv[c]))
 
 		{
-			str_to_int = atoi(argv[count]); /*ATOI --> convert string to int*/
-			sum += str_to_int;
+			si = atoi(argv[c]);
+			result += si;
 		}
 
-		/*Condition if one of the number contains symbols that are not digits*/
 		else
 		{
 			printf("Error\n");
 			return (1);
 		}
 
-		count++;
+		c++;
 	}
 
-	printf("%d\n", sum); /*print sum*/
+	printf("%d\n", result);
 
 	return (0);
 }
