@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-*main - A program that prints _putcha
+*main - A program that prints _putchar
 *Return: Always 0 (Success)
 */
 int main(void)
