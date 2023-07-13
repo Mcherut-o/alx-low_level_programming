@@ -10,11 +10,11 @@
 
 int charc_ch(char *c, int a, int b)
 {
-        if (*(c + a) != *(c + b - 1))
-                return (0);
-        if (a >= b)
-                return (1);
-        return (charc_ch(c, a + 1, b - 1));
+	if (*(c + a) != *(c + b - 1))
+		return (0);
+	if (a >= b)
+		return (1);
+	return (charc_ch(c, a + 1, b - 1));
 }
 
 /**
@@ -25,9 +25,9 @@ int charc_ch(char *c, int a, int b)
 
 int _strlen_recursion(char *s)
 {
-        if (*s == '\0')
-                return (0);
-        return (1 + _strlen_recursion(s + 1));
+	if (*s == '\0')
+		return (0);
+	return (1 + _strlen_recursion(s + 1));
 }
 
 /**
