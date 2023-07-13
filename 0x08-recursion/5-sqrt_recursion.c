@@ -19,7 +19,7 @@ int _sqrt_recursion(int n)
  * calc_sqrt_recursion - A function that recurses to find the natural
  * square root of a number
  * @a: Parameter1
- * @b: Parameter2 
+ * @b: Parameter2
  * Return: the resulting square root
  */
 
