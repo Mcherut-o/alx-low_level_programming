@@ -2,11 +2,11 @@
 #include <stdarg.h>
 
 /**
- * sum_them_all - Calculates sum of a variable number of integers
- * @n: The number of integers to sum up
- * @...: A list of integers to calculate the sum of
+ * sum_them_all - Calculates sum of integers
+ * @n: Number of integers
+ * @...: A list of integers
  * Return: If n == 0, returns 0
- *       :  Otherwise, returns the sum of all the integers
+ *       : Otherwise, Sum of all the integers
  */
 
 int sum_them_all(const unsigned int n, ...)
