@@ -5,7 +5,7 @@
  * @array: An array to be searched
  * @size: The size of elements in array
  * @cmp: A pointer to a function
- * Return: Index of the first element 
+ * Return: Index of the first element
  *       : If size <= 0, return -1
  */
 
