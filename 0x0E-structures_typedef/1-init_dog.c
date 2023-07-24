@@ -3,11 +3,12 @@
 
 /**
  * init_dog - Initializes the fields of a struct dog variable
- * @d: A pointer 
+ * @d: A pointer
  * @name:Name of the dog.
  * @age: Age of dog
  * @owner: The one owning the dog
  */
+
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
 	if (d != NULL)
