@@ -1,1 +1,1 @@
-Static Libraries
+Static libraries creation

@@ -9,5 +9,5 @@
 
 char *_strpbrk(char *s, char *accept)
 {
-        /*Empty*/
-}         
+	/*Empty*/
+}
